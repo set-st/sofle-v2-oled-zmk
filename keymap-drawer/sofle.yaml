@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '[', ESC, Q, W, E, R, T, Y, U, I, O, P, ']', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, MUTE, Ctl+UP ARROW, N, M, ',', ., /, BACKSPACE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
-  lower:
+  Default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '[', ESC, Q, W, E, R, T, Y, U, I, O, P, ']', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
+    X, C, V, B, MUTE, Ctl+UP ARROW, N, M, ',', ., /, BACKSPACE, LGUI, LALT, LCTRL, Lower, RET, SPACE, Raise, RCTRL, RALT, RGUI]
+  Lower:
   - '&studio_unlock'
   - F1
   - F2
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  Raise:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  Adjust:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
