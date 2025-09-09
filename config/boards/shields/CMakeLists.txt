@@ -1,0 +1,1 @@
+add_subdirectory(sofle_dongle)
