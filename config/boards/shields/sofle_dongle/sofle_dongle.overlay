@@ -13,7 +13,6 @@
         events = <0>;
     };
 
-    // Скопируйте matrix transform из оригинального Sofle shield
     default_transform: transform {
         compatible = "zmk,matrix-transform";
         columns = <10>;
