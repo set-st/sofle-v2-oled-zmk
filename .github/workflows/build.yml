@@ -1,29 +1,5 @@
-name: Build ZMK Firmware
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  clean-cache:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Clean build cache
-        run: rm -rf build
   build:
-    needs: clean-cache
-    uses: zmkfirmware/zmk/.github/workflows/build.yml@main
-    with:
-      paths: |
-        config/west.yml
-        config/build.yaml
-      shields: |
-        sofle_left
-        sofle_right
-        sofle_dongle prospector_adapter
-        settings_reset
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
