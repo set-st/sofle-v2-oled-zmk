@@ -4,11 +4,22 @@
 if SHIELD_SOFLE_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "Sofle Dongle"
+    default "Sofle Dongle"
+
+config ZMK_SPLIT
+    default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
-	default y
+    default y
 
+config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
+    int "Number of BLE peripherals"
+    default 2
+
+config PROSPECTOR_DISPLAY
+    bool "Enable Prospector display"
+    default y
+    
 endif
 
 if SHIELD_SOFLE_LEFT
