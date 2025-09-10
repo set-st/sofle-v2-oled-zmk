@@ -6,23 +6,6 @@
 
 #include "sofle.dtsi"
 
-/ {
-    aliases {
-        pro_micro_i2c = &i2c0;
-    };
-
-    chosen {
-        zmk,i2c = &i2c0;
-    };
-};
-
-&i2c0 {
-    status = "okay";
-    sda-pin = <6>;  /* P0.06 for SDA on nice_nano_v2 */
-    scl-pin = <7>;  /* P0.07 for SCL on nice_nano_v2 */
-    clock-frequency = <I2C_BITRATE_FAST>;
-};
-
 &default_transform {
     col-offset = <6>;
 };
