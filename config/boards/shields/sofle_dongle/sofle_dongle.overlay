@@ -30,5 +30,6 @@
     sofle_layout: sofle_layout {
         compatible = "zmk,physical-layout";
         display-name = "Sofle";
+        transform = <&default_transform>;
     };
 };
