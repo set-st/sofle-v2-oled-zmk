@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &sofle_layout;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -24,5 +25,10 @@
             RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9)
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9)
         >;
+    };
+
+    sofle_layout: sofle_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Sofle";
     };
 };
