@@ -9,9 +9,8 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
-    int "Number of BLE peripherals"
-    default 2
+config ZMK_USB
+    default y
 
 config PROSPECTOR_DISPLAY
     bool "Enable Prospector display"
@@ -30,6 +29,9 @@ endif
 #endif
 
 if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
+
+config ZMK_BLE
+    default y
 
 config ZMK_SPLIT
     default y
