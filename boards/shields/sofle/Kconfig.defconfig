@@ -13,9 +13,9 @@ config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
     int "Number of BLE peripherals"
     default 2
 
-#config PROSPECTOR_DISPLAY
-#    bool "Enable Prospector display"
-#    default y
+config PROSPECTOR_DISPLAY
+    bool "Enable Prospector display"
+    default y
     
 endif
 
@@ -29,7 +29,7 @@ endif
 
 #endif
 
-if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT || SHIELD_SOFLE_DONGLE
+if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
 
 config ZMK_SPLIT
     default y
