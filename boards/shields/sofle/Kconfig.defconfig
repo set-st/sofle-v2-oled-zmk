@@ -13,9 +13,9 @@ config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
     int "Number of BLE peripherals"
     default 2
 
-config PROSPECTOR_DISPLAY
-    bool "Enable Prospector display"
-    default y
+#config PROSPECTOR_DISPLAY
+#    bool "Enable Prospector display"
+#    default y
     
 endif
 
