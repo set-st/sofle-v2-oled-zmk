@@ -1,4 +1,4 @@
-include <sofle.dsti>
+#include <sofle.dsti>
 
 / {
     chosen {
