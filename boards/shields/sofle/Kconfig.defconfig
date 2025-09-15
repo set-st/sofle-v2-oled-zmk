@@ -4,10 +4,7 @@
 if SHIELD_SOFLE_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Sofle Dongle"
-
-config ZMK_SPLIT
-    default y
+    default "Sofle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -22,17 +19,17 @@ config PROSPECTOR_DISPLAY
     
 endif
 
-if SHIELD_SOFLE_LEFT
+#if SHIELD_SOFLE_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "Sofle"
+#config ZMK_KEYBOARD_NAME
+#    default "Sofle"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+#config ZMK_SPLIT_ROLE_CENTRAL
+#    default y
 
-endif
+#endif
 
-if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
+if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT || SHIELD_SOFLE_DONGLE
 
 config ZMK_SPLIT
     default y
